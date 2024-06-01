@@ -3,12 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="register.js"></script>
+    <script src="js/myscript.js"></script>
     <title>HOME - JS HTML</title>
 </head>
 <body>
     <h1>DLLT Education</h1>
     <h2>Registration Form</h2>
+    <form id="form" method="post" action="html/Hello.html">
+        <fieldset>
+            <legend>Personal information</legend>
+            <p><label for="fname">Enter your FirstName</label>
+            <input type="text" id="fname" name="fname"></p>
 
+            <p><label for="lname">Enter your LastName</label>
+            <input type="text" id="lname" name="lname"></p>
+
+            <p><label for="email">Enter your Email</label>
+            <input type="text" id="email" name="email"></p>
+
+            <p><label for="phone_Number">Enter your Phone Number</label>
+            <input type="text" id="phone_Number" name="phone_Number"></p>
+
+            <p><label for="age">Enter your Age</label>
+            <input type="text" id="age" name="age"></p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Select your occupation</legend>
+            <p><label for="highschool">Highschool</label>
+            <input type="radio" id="highschool" name="occupation" value="highschool"> </p>
+
+            <p><label for="university">University</label>
+            <input type="radio" id="university" name="occupation" value="university"> </p>
+
+            <p><label for="working">Working</label>
+            <input type="radio" id="working" name="occupation" value="working"> </p>
+
+            <p><label for="retired">Retired</label>
+            <input type="radio" id="retired" name="occupation" value="retired"> </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Select Courses</legend>
+            <label for="1_logic_math">Logic Math - 449k</label>
+            <input type="checkbox" id="1_logic_math" name="1_logic_math" value="selected"> <br>
+
+            <label for="1_python_basic">Python Basic - 799k</label> 
+            <input type="checkbox" id="1_python_basic" name="1_python_basic" value="selected"> <br>
+
+            <label for="1_web_basic">Web Basic - 749k</label> 
+            <input type="checkbox" id="1_web_basic" name="1_web_basic" value="selected"> <br>
+
+            <label for="1_game_python">Game Python - 149k</label> 
+            <input type="checkbox" id="1_game_python" name="1_game_python" value="selected"> <br>
+
+            <label for="1_data_science">Data Science Basic - 249k</label> 
+            <input type="checkbox" id="1_data_science" name="1_data_science" value="selected"> <br>
+
+            <label for="1_ai_basic">AI Basic - 499k</label> 
+            <input type="checkbox" id="1_ai_basic" name="1_ai_basic" value="selected"> <br> 
+
+        </fieldset>
+        <label for="cars">Payment method</label>
+
+        <select id="cars" name="cars">
+            <option value="none">Please select</option>
+            <option value="paypal">Paypal</option>
+            <option value="credit_card">Credit Card</option>
+        </select>
+        <br />
+        <input type="submit" value="Register now">
+        <input type="reset" value="Reset">
+    </form>
 </body>
 </html>
